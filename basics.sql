@@ -99,8 +99,33 @@ DELETE FROM student2
 WHERE student_id = 3;
 
 
+CREATE TABLE person (
+     id INT PRIMARY KEY,
+     first_name VARCHAR(20),
+     last_name VARCHAR(20),
+     date_of_birth DATE,
+     email VARCHAR(20)
+);
+
+ALTER TABLE person ADD gender VARCHAR(20);
 
 
+INSERT INTO person VALUES (
+     1, 'Anne', 'Smith', '1998-01-08', 'anne@gmail.com', 'Female'
+);
+
+SELECT * FROM person;
+
+INSERT INTO person VALUES (
+     2, 'Jake', 'Jones', '1990-01-10', 'jake@gmail.com', 'Male'
+);
+
+
+SELECT first_name, last_name FROM person;
+
+SELECT email FROM person;
+
+SELECT * FROM person ORDER BY last_name ACS;
 
 
 
